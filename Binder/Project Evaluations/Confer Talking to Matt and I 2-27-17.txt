@@ -1,0 +1,7 @@
+Have colors with different levels of friction
+
+When users are creating images make sure they are
+
+Checkpoint would be center of the track, and have a radius from the point so if they cross that radius, they crossed the radius. 
+
+You can create blobs of circles that go all the way around. You can overlap blobs to make sure they are going through checkpoints. 
