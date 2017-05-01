@@ -83,15 +83,15 @@ void peripherals_clock(miniat *m, vehicle &car) {
 				break;
 			case P_DIST_LEFT:
 				bus.data=car.spaceLeft_f();
-				printf("MiniAT: LOADed from P_TURN_LEFT Dist: %d\n", bus.data);
+				printf("MiniAT: LOADed from P_TURN_LEFT Dist: %d\n", car.spaceLeft_f());
 				break;
 			case P_DIST_RIGHT:
 				bus.data=car.spaceRight_f();
-				printf("MiniAT: LOADed from P_TURN_RIGHT Dist: %d\n", bus.data);
+				printf("MiniAT: LOADed from P_TURN_RIGHT Dist: %d\n", car.spaceRight_f());
 				break;
 			case P_DIST_FRONT:
 				bus.data=car.spaceUp_f();
-				printf("MiniAT: LOADed from P_TURN_FRONT Dist: %d\n", bus.data);
+				printf("MiniAT: LOADed from P_TURN_FRONT Dist: %d\n", car.spaceUp_f());
 				break;
 			default:
 				fprintf(stderr, "There is no peripheral accepting reads at 0x%04X\n", bus.address);
